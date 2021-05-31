@@ -45,13 +45,12 @@ public class ManagerTaskCreateTest extends AcmePlannerTest{
 	}
 	
 	//createNegativo: comprobamos fallo del metodo create de Manager Task. Para ello nos logeamos como manager1, vamos a create task en el menu de
-	//manager, rellenamos el formulario mal poniendo la descripcion en lugar de initialmoment y viceversa(Intercambiando su lugar en la llamada al metodo), 
-	//y comprobamos que de error.
+	//manager, rellenamos el formulario con distintos errores especificados en la descripcion y comprobamos que de mal.
 	@ParameterizedTest
-	@CsvFileSource(resources = "/manager/task/createPositive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/manager/task/createNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createNegativo(final int recordIndex, final String title, final String description, final String finalMoment, final String workload,
-		final String initialMoment) {
+	public void createNegativo(final int recordIndex, final String title, final String initialMoment, final String finalMoment, final String workload,
+		final String description) {
 		
 		super.signIn("manager1", "manager1");
 		super.clickOnMenu("Manager", "Create Task");
@@ -66,6 +65,6 @@ public class ManagerTaskCreateTest extends AcmePlannerTest{
 		super.checkErrorsExist();
 		super.signOut();
 		
-	}
+	} 
 
 }

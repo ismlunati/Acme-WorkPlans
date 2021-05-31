@@ -1,0 +1,5 @@
+recordIndex,title,initialMoment,finalMoment,workload,description
+0, Tarea 20: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,,Fallo por no haber workload
+0, Tarea 21: tarea privada finalizada,2021/01/01 11:00,2021/02/01 11:00,2.50,Fallo por crearla en fecha pasada
+0, Tarea 22: tarea privada finalizada,2022/01/02 09:00,2022/01/01 21:00,13.50,Fallo por finalMoment antes que InitialMoment
+0, Tarea 23: tarea privada finalizada,2022/01/01 11:00,2022/01/01 12:00,2.00,Workload mayor que tiempo entre finalMoment e InitialMoment
