@@ -1,0 +1,8 @@
+recordIndex,title,initialMoment,finalMoment,workload,description
+0,sex,2021/02/20 11:02,2021/03/22 21:37,13.50,ejemplo
+1,,2021/02/18 12:02,2022/02/24 20:37,100.40,Esto es un ejemplo de una tarea privada no finalizada modificada
+2,Tarea 3: tarea pública finalizada modificada,2021/02/20 11:02,2021/03/22 21:37,asdf,Esto es un ejemplo de una tarea pública finalizada modificada
+3,Tarea 5: tarea privada no finalizada modificada,2023/03/20 11:02,2023/03/22 21:37,72,Esto es un ejemplo de una tarea privada no finalizada modificada
+4,Tarea 9: tarea pública no finalizada modificada,,2023/06/22 21:37,24.70,Esto es un ejemplo de una tarea pública no finalizada modificada
+5,Tarea 11: tarea privada no finalizada modificada,2023/07/20 11:02,2021/07/22 23:37,13.40,Esto es un ejemplo de una tarea privada no finalizada modificada
+
