@@ -73,16 +73,21 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		String res;
 		res= entity.getTitle().concat(" ").concat(entity.getDescription());
 			
+		final Integer taskID=entity.getId();
+		final Task tareaConcreta= this.repository.findOneTaskById(taskID);
 		
 		
-		boolean fechaPermitidaModificar;
-		final Date fecha= entity.getFinalMoment();
 		
-		fechaPermitidaModificar= fecha.after(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()));
 
-		if(fechaPermitidaModificar) {
-			errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMomentUpdate");
+		if(tareaConcreta.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+			errors.state(request, false, "finalMoment", "manager.task.create.error.label.finalMomentUpdate");
 		}
+		if(tareaConcreta.getInitialMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+			if(!tareaConcreta.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+			errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMomentUpdate");
+			}
+		}
+		
 		
 		
 		
@@ -95,7 +100,7 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 			final Date finalMom = entity.getFinalMoment();
 			final Date initialMom = entity.getInitialMoment();
 			
-			errors.state(request, finalMom.compareTo(initialMom) > 0, "finalMoment", "manager.task.create.error.label.finalMoment");
+			errors.state(request, finalMom.compareTo(initialMom) > 0, "finalMoment", "manager.task.create.error.label.finalMomentBeforeInitialmoment");
 		}
 		
 		if (!errors.hasErrors("workload")) {

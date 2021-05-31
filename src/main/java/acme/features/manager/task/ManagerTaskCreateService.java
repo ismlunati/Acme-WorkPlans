@@ -111,7 +111,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 				final Date finalMom = entity.getFinalMoment();
 				final Date initialMom = entity.getInitialMoment();
 				
-				errors.state(request, finalMom.compareTo(initialMom) > 0, "finalMoment", "manager.task.create.error.label.finalMoment");
+				errors.state(request, finalMom.compareTo(initialMom) > 0, "finalMoment", "manager.task.create.error.label.finalMomentBeforeInitialmoment");
 			}
 			
 			if (!errors.hasErrors("workload")) {
