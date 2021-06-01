@@ -9,10 +9,10 @@
 # they accept any liabilities with respect to them.
 
 
-authenticated.task.list.label.title= Titulo
-authenticated.task.list.label.initialMoment=Principio
+authenticated.task.list.label.title= Título
+authenticated.task.list.label.initialMoment= Inicio
 authenticated.task.list.label.finalMoment= Fin
 authenticated.task.list.label.workload= Carga de trabajo
-authenticated.task.list.label.description= Descripcion
-authenticated.task.form.button.return=volver
+authenticated.task.list.label.description= Descripción
+authenticated.task.form.button.return= volver
 authenticated.task.list.label.isPublic=Es publica?

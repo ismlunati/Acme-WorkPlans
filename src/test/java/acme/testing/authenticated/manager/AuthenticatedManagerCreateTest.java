@@ -16,6 +16,8 @@ public class AuthenticatedManagerCreateTest extends AcmePlannerTest {
 	 * Características "acme.features.authenticated.manager"
 	 * 
 	 * Comprobamos que la opción de "Become a manager" funcione correctamente.
+	 * 
+	 * Para esta acción no hay caso negativo que comprobar, ya que simplemente en convertirse en manager al presionar un botón.
 	 */
 	
 	@ParameterizedTest

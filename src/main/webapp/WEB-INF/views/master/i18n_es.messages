@@ -32,12 +32,12 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
-master.menu.anonymous.tasks = Tareas
+master.menu.anonymous.tasks = Listar tareas
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
-master.menu.administrator.task=Listar tareas
+master.menu.administrator.task= Listar tareas
 master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)

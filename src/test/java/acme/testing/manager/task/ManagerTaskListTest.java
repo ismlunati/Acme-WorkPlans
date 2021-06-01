@@ -14,6 +14,8 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 	 * 
 	 * Este test se encarga de comprobar que el servicio ListMine de la entidad Task funcione correctamente,
 	 * comprobando que cada columna del listado coincida con los datos pasados por el archivo csv.
+	 * 
+	 * Para list no hay ningún caso negativo que se pueda comprobar, ya que es simplemente comprobar que los valores coincidan.
 	 */
 	
 	@ParameterizedTest		
@@ -29,7 +31,14 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 		super.checkColumnHasValue(recordIndex, 1, initialMoment);
 		super.checkColumnHasValue(recordIndex, 2, finalMoment);
 		super.checkColumnHasValue(recordIndex, 3, workload);
-		super.checkColumnHasValue(recordIndex, 4, description);
+		
+		super.clickOnListingRecord(recordIndex);
+		
+		super.checkInputBoxHasValue("title", title);
+		super.checkInputBoxHasValue("initialMoment", initialMoment);
+		super.checkInputBoxHasValue("finalMoment", finalMoment);
+		super.checkInputBoxHasValue("workload", workload);
+		super.checkInputBoxHasValue("description", description);
 	
 		super.signOut();
 	}

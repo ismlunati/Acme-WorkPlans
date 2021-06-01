@@ -15,6 +15,8 @@ public class AnonymousShoutListTest extends AcmePlannerTest{
 	 * 
 	 * Este test se encarga de comprobar que el servicio List de la entidad Shout funcione correctamente,
 	 * comprobando que cada columna del listado coincida con los datos pasados por el archivo csv.
+	 * 
+	 * Para list no hay ningún caso negativo que se pueda comprobar, ya que es simplemente comprobar que los valores coincidan.
 	 */
 
 		@ParameterizedTest
