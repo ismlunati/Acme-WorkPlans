@@ -25,7 +25,7 @@ import lombok.Setter;
 		// Attributes -------------------------------------------------------------		
 		
 		@NotNull
-		@Range(min = 0, max = 100)
+		@Range(min = 1, max = 100)
 		protected Double					tolerancia;
 				
 		// Derived attributes -----------------------------------------------------
