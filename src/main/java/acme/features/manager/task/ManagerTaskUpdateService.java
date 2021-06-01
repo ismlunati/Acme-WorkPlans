@@ -12,7 +12,7 @@
 
 package acme.features.manager.task;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
@@ -78,16 +78,23 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		
 		
 		
+		final Date fechaInicial= tareaConcreta.getInitialMoment();
+		final Date fechaFinal= tareaConcreta.getFinalMoment();
+		
+		final LocalDateTime fInicial= fechaInicial.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+		final LocalDateTime fFinal= fechaFinal.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 
-		if(tareaConcreta.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+		if(fFinal.isBefore(LocalDateTime.now())) {
 			errors.state(request, false, "finalMoment", "manager.task.create.error.label.finalMomentUpdate");
 		}
-		if(tareaConcreta.getInitialMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
-			if(!tareaConcreta.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+		
+		
+		
+		if(fInicial.isBefore(LocalDateTime.now())) {
+			if(fFinal.isAfter(LocalDateTime.now())) {
 			errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMomentUpdate");
 			}
 		}
-		
 		
 		
 		
@@ -113,13 +120,12 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		}
 		
 
-		if(entity.getInitialMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+		if(entity.getInitialMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime().isBefore(LocalDateTime.now())) {
 			errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMoment");
 		}
-		if(entity.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+		if(entity.getFinalMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime().isBefore(LocalDateTime.now())) {
 			errors.state(request, false , "finalMoment", "manager.task.create.error.label.finalMoment");
 		}
-		
 		
 		
 		
