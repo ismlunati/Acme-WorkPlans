@@ -37,7 +37,7 @@ manager.task.create.error.label.negativeWorkload = The workload cannot be negati
 manager.task.create.error.label.initialMoment=Initial moment is on past
 manager.task.create.error.label.finalMoment= Final moment is on past
 
-manager.task.create.error.label.initialMomentUpdate= Cannot modify a completed task
+manager.task.create.error.label.initialMomentUpdate= Cannot modify a in curse task
 manager.task.create.error.label.finalMomentUpdate= Cannot modify a completed task
 
 manager.task.create.error.label.finalMomentBeforeInitialmoment= finalMoment must be after initialMoment

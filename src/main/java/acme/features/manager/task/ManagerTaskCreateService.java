@@ -12,7 +12,7 @@
 
 package acme.features.manager.task;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
@@ -128,10 +128,10 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 				errors.state(request, entity.getWorkload()*3600000 <= maxWorkload, "workload", "manager.task.create.error.label.workload");
 			}
 			
-			if(entity.getInitialMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+			if(entity.getInitialMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime().isBefore(LocalDateTime.now())) {
 				errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMoment");
 			}
-			if(entity.getFinalMoment().before(Date.from(LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant()))) {
+			if(entity.getFinalMoment().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime().isBefore(LocalDateTime.now())) {
 				errors.state(request, false , "finalMoment", "manager.task.create.error.label.finalMoment");
 			}
 			
