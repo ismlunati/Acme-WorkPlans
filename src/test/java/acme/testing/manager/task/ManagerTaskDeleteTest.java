@@ -1,7 +1,6 @@
 package acme.testing.manager.task;
 
 import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -14,6 +13,7 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 	//deletePositivo: comprobamos que funcione el metodo delete de Manager Task. Para ello nos logeamos como manager2, vamos a list my task en el menu de
 	//manager, accedemos al elemento numero 5 de la lista, lo borramos, y accedemos de nuevo al elemento 5 de la lista (que como el 5 ha sido borrado, el 
 	//nuevo elemento 5 de la lista será el que inicialmente era el 6.
+	//Para delete no hay ningún caso negativo ya que la acción simplemente es borrar al presionar el botón correspondiente.
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/deletePositive.csv", encoding = "utf-8", numLinesToSkip = 1)
@@ -54,13 +54,7 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
-	//deleteNegativo:Comprobamos que no funcione el metodo delete de Manager Task bajo ciertas condiciones. Para ello intentamos acceder a delete sin loggear.
-	
-	@Test
-	public void deleteNegativo() {
-		super.navigate("/manager/task/delete", null);
-		super.checkErrorsExist();
-	}
+
 
 }
 

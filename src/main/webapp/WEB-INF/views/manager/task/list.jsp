@@ -17,8 +17,7 @@
 
 <acme:list>
 	<acme:list-column code="manager.task.list.label.title" path="title" width="10%"/>
-	<acme:list-column code="manager.task.list.label.initialMoment" path="initialMoment" width="10%"/>
-	<acme:list-column code="manager.task.list.label.finalMoment" path="finalMoment" width="80%"/>
-	<acme:list-column code="manager.task.list.label.workload" path="workload" width="80%"/>
-	<acme:list-column code="manager.task.list.label.description" path="description" width="80%"/>
+	<acme:list-column code="manager.task.list.label.initialMoment" path="initialMoment" width="30%"/>
+	<acme:list-column code="manager.task.list.label.finalMoment" path="finalMoment" width="30%"/>
+	<acme:list-column code="manager.task.list.label.workload" path="workload" width="20%"/>
 </acme:list>

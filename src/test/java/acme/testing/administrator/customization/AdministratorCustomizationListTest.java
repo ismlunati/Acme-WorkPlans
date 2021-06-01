@@ -14,7 +14,10 @@ public class AdministratorCustomizationListTest extends AcmePlannerTest {
 	 * 
 	 * Este test se encarga de comprobar que coincida el elemento con el que se ha pasado por el csv.
 	 * En este caso, ya que aquí solo mostramos el umbral, solo habría que probar que coincidia el umbral establecido(10.00)
-	 * con el pasado por el fichero csv(10.00), como coinciden no se producirá ningun error
+	 * con el pasado por el fichero csv(10.00), como coinciden no se producirá ningun error. Después de esto entramos en la vista show
+	 * y comprobamos de nuevo que los valores coinciden.
+	 * 
+	 * Para list no hay ningún caso negativo que se pueda comprobar, ya que es simplemente comprobar que los valores coincidan.
 	 */
 	
 	@ParameterizedTest
@@ -26,6 +29,10 @@ public class AdministratorCustomizationListTest extends AcmePlannerTest {
 		super.clickOnMenu("Administrator", "Threshold");		
 		
 		super.checkColumnHasValue(recordIndex, 0, threshold);
+		
+		super.clickOnListingRecord(recordIndex);
+		
+		super.checkInputBoxHasValue("tolerancia", threshold);
 		
 		super.signOut();
 	}

@@ -18,6 +18,8 @@ public class AuthenticatedTaskListTest extends AcmePlannerTest {
 	 * 
 	 * Se comprueba que coincida cada elemento con el esperado de la lista de tareas.
 	 * Debido a que todas la entradas de la lista coinciden con las del fichero csv, no se producirá ningún error.
+	 * 
+	 * Para list no hay ningún caso negativo que se pueda comprobar, ya que es simplemente comprobar que los valores coincidan.
 	 */
 	
 	@ParameterizedTest

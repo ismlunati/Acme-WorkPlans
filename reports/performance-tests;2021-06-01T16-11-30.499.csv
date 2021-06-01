@@ -1,0 +1,12 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-01 16:11:52.873,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5141,"[1] recordIndex=0, spamWord=sex",OK
+2021-06-01 16:11:58.149,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5056,"[2] recordIndex=1, spamWord=sexo",OK
+2021-06-01 16:12:03.516,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5134,"[3] recordIndex=2, spamWord=hard core",OK
+2021-06-01 16:12:08.795,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5061,"[4] recordIndex=3, spamWord=explícito",OK
+2021-06-01 16:12:14.126,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5091,"[5] recordIndex=4, spamWord=viagra",OK
+2021-06-01 16:12:19.523,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5163,"[6] recordIndex=5, spamWord=cialis",OK
+2021-06-01 16:12:24.847,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5104,"[7] recordIndex=6, spamWord=nigeria",OK
+2021-06-01 16:12:30.124,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5041,"[8] recordIndex=7, spamWord=you've won",OK
+2021-06-01 16:12:35.422,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5076,"[9] recordIndex=8, spamWord=has ganado",OK
+2021-06-01 16:12:40.749,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5086,"[10] recordIndex=9, spamWord=million dollar",OK
+2021-06-01 16:12:45.973,acme.testing.administrator.spamword.AdministratorSpamwordListTest,list,5006,"[11] recordIndex=10, spamWord=millón de dolares",OK

@@ -10,8 +10,8 @@
 
 
 authenticated.task.list.label.title= Title
-authenticated.task.list.label.initialMoment=Beginnig
-authenticated.task.list.label.finalMoment= End
+authenticated.task.list.label.initialMoment= Initial moment
+authenticated.task.list.label.finalMoment= Final moment
 authenticated.task.list.label.workload= Workload
 authenticated.task.list.label.description= Description
 authenticated.task.form.button.return=Back 
