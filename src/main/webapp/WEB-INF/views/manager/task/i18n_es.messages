@@ -33,6 +33,10 @@ manager.task.create.error.label.finalMoment = El momento final no puede ser ante
 manager.task.create.error.label.workload = La carga de trabajo no puede ser mayor del tiempo que hay entre el inicio y final de la tarea
 manager.task.create.error.label.negativeWorkload = La carga de trabajo no puede ser negativa
 
-manager.task.create.error.label.initialMomentUpdate= No puede modificar una tarea finalizada
 manager.task.create.error.label.initialMoment=La fecha inicial esta en pasado
 manager.task.create.error.label.finalMoment= La fecha final esta en pasado
+
+anager.task.create.error.label.initialMomentUpdate= No se puede modificar una tarea en curso
+manager.task.create.error.label.finalMomentUpdate= No se puede modificar una tarea finalizada
+
+manager.task.create.error.label.finalMomentBeforeInitialmoment=La fecha final debe ser posterior a la inicial
