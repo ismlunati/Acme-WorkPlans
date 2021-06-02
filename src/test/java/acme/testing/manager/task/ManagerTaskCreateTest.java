@@ -31,7 +31,6 @@ public class ManagerTaskCreateTest extends AcmePlannerTest{
 		super.checkColumnHasValue(recordIndex, 1, initialMoment);
 		super.checkColumnHasValue(recordIndex, 2, finalMoment);
 		super.checkColumnHasValue(recordIndex, 3, workload);
-		super.checkColumnHasValue(recordIndex, 4, description);
 		
 		super.clickOnListingRecord(recordIndex);
 
