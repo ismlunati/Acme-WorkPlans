@@ -29,7 +29,7 @@ public class AnonymousTaskListTest extends AcmePlannerTest{
 	public void list(final int recordIndex, final String title, final String initialMoment, final String finalMoment, final String workload, final String description, final String isPublic) {		
 //		super.signIn("employer1", "employer1");
 		
-		super.clickOnMenu("Anonymous", "Tasks");		
+		super.clickOnMenu("Anonymous", "List tasks");		
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, initialMoment);
