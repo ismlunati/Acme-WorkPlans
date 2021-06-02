@@ -29,7 +29,6 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 		super.checkColumnHasValue(recordIndex, 1, initialMoment);
 		super.checkColumnHasValue(recordIndex, 2, finalMoment);
 		super.checkColumnHasValue(recordIndex, 3, workload);
-		super.checkColumnHasValue(recordIndex, 4, description);
 		
 		super.clickOnListingRecord(recordIndex);
 		
@@ -41,7 +40,6 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 		super.checkColumnHasValue(recordIndex, 1, newInitialMoment);
 		super.checkColumnHasValue(recordIndex, 2, newFinalMoment);
 		super.checkColumnHasValue(recordIndex, 3, newWorkload);
-		super.checkColumnHasValue(recordIndex, 4, newDescription);
 		
 		super.clickOnListingRecord(recordIndex);
 		

@@ -34,14 +34,15 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 			super.fillInputBoxIn("description", description);	
 			
 			super.clickOnSubmitButton("Update");
+		
 			
 			super.checkColumnHasValue(recordIndex, 0, title);
 			super.checkColumnHasValue(recordIndex, 1, initialMoment);
 			super.checkColumnHasValue(recordIndex, 2, finalMoment);
 			super.checkColumnHasValue(recordIndex, 3, workload);
-			super.checkColumnHasValue(recordIndex, 4, description);
+	
 			
-			super.clickOnListingRecord(recordIndex);
+			
 			
 			super.signOut();
 		}
