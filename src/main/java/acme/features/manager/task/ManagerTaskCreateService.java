@@ -48,34 +48,36 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		return true;
 	}
 	
-	public static  boolean esSpam(final List<SpamWord> palabrasSpam, final String texto, final Double tolerancia) {
+	public static  boolean esSpam(final List<SpamWord> palabrasSpam, final String contenido, final Double tolerancia) {
 		boolean boleano=false;
+		int contador=0;
+		int contadornegativo=0;
 		
-		int npalabrasspam=0;
 		
-		int palabrasCompuestas=0;
-		for(int i=0; i<palabrasSpam.size(); i++) {
-			
-			if(texto.contains(palabrasSpam.get(i).getPalabraSpam())){
-				
-				
-				
-				final String[] pru=texto.concat(".").split(palabrasSpam.get(i).getPalabraSpam());
-				
-				npalabrasspam+= pru.length-1;
-				
-				if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>=2) {
-					palabrasCompuestas+= (palabrasSpam.get(i).getPalabraSpam().split(" ").length-1) *  (pru.length-1);
-				}
+		String texto=contenido;
+		
+		final int a= contenido.split(" ").length;
+		
+		
+		for(int i=0; i<palabrasSpam.size();i++) {				
+		
+		
+		while (texto.indexOf(palabrasSpam.get(i).getPalabraSpam()) > -1) {
+			if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>1) {
+				contadornegativo+=palabrasSpam.get(i).getPalabraSpam().split(" ").length-1;
 			}
+			texto= contenido.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
+			//texto = texto.substring(texto.indexOf(palabrasSpam.get(i).getPalabraSpam())+palabrasSpam.get(i).getPalabraSpam().length(),texto.length());
+		     contador++; 
+	
 		}
 		
-		final String[] grito= texto.replace(".", "").replace(",", "").split(" ");	
+		}
+		final int npalabras= a-contadornegativo;
 		
-		final double porcentaje= ((double)npalabrasspam/(double)(grito.length-palabrasCompuestas))*100.;
-		
-		if(porcentaje >=tolerancia) {
-			
+		final double porcentaje= (contador/(double)(npalabras))*100.;
+
+		if(porcentaje >=tolerancia) {	
 			boleano=true;
 		}
 		
