@@ -102,7 +102,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 			if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>1) {
 				contadornegativo+=palabrasSpam.get(i).getPalabraSpam().split(" ").length-1;
 			}
-			texto= contenido.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
+			texto= texto.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
 			//texto = texto.substring(texto.indexOf(palabrasSpam.get(i).getPalabraSpam())+palabrasSpam.get(i).getPalabraSpam().length(),texto.length());
 		     contador++; 
 	

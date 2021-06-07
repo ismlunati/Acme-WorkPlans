@@ -48,6 +48,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		return true;
 	}
 	
+
 	public static  boolean esSpam(final List<SpamWord> palabrasSpam, final String contenido, final Double tolerancia) {
 		boolean boleano=false;
 		int contador=0;
@@ -66,7 +67,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>1) {
 				contadornegativo+=palabrasSpam.get(i).getPalabraSpam().split(" ").length-1;
 			}
-			texto= contenido.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
+			texto= texto.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
 			//texto = texto.substring(texto.indexOf(palabrasSpam.get(i).getPalabraSpam())+palabrasSpam.get(i).getPalabraSpam().length(),texto.length());
 		     contador++; 
 	
@@ -84,7 +85,6 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		
 		return boleano;
 	}
-
 
 	@Override
 	public void validate(final Request<Task> request, final Task entity, final Errors errors) {
