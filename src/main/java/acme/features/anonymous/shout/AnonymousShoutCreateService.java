@@ -81,45 +81,49 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	}
 	
 	
-
 	
-	
-	public static  boolean esSpam(final List<SpamWord> palabrasSpam, final String contenido, final Double tolerancia) {
-		boolean boleano=false;
-		int contador=0;
-		int contadornegativo=0;
-		
-		
-		String texto=contenido;
-		
-		final int a= contenido.split(" ").length;
-		
-		
-		for(int i=0; i<palabrasSpam.size();i++) {				
-		
-		
-		while (texto.indexOf(palabrasSpam.get(i).getPalabraSpam()) > -1) {
-			if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>1) {
-				contadornegativo+=palabrasSpam.get(i).getPalabraSpam().split(" ").length-1;
-			}
-			texto= texto.replaceFirst(palabrasSpam.get(i).getPalabraSpam(), "");
-			//texto = texto.substring(texto.indexOf(palabrasSpam.get(i).getPalabraSpam())+palabrasSpam.get(i).getPalabraSpam().length(),texto.length());
-		     contador++; 
-	
-		}
-		
-		}
-		final int npalabras= a-contadornegativo;
-		
-		final double porcentaje= (contador/(double)(npalabras))*100.;
-
-		if(porcentaje >=tolerancia) {	
-			boleano=true;
-		}
-		
-		
-		return boleano;
-	}
+	public static  boolean esSpam(final List<SpamWord> palabrasSpam, final String texto, final Double tolerancia) {
+        boolean boleano=false;
+        
+        int npalabrasspam=0;
+        
+        int palabrasCompuestas=0;
+        
+        String cadena=texto;
+        
+        
+        for(int i=0; i<palabrasSpam.size(); i++) {
+            
+            if(cadena.contains(palabrasSpam.get(i).getPalabraSpam())){
+                
+                
+                
+                final String a=".".concat(cadena);
+                final String[] pru=a.concat(".").split(palabrasSpam.get(i).getPalabraSpam());
+                
+                
+                
+                npalabrasspam+= pru.length-1;
+                
+                if(palabrasSpam.get(i).getPalabraSpam().split(" ").length>=2) {
+                    palabrasCompuestas+= (palabrasSpam.get(i).getPalabraSpam().split(" ").length-1) *  (pru.length-1);
+                }
+            }
+            cadena=cadena.replaceAll(palabrasSpam.get(i).getPalabraSpam(), "");
+        }
+        
+        final String[] grito= texto.replace(".", "").replace(",", "").split(" ");    
+        
+        final double porcentaje= ((double)npalabrasspam/(double)(grito.length-palabrasCompuestas))*100.;
+        
+        if(porcentaje >=tolerancia) {
+            
+            boleano=true;
+        }
+        
+        
+        return boleano;
+    }
 	
 	@Override
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
