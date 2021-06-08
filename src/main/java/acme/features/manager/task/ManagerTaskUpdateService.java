@@ -90,10 +90,8 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		
 		
 		
-		if(fInicial.isBefore(LocalDateTime.now())) {
-			if(fFinal.isAfter(LocalDateTime.now())) {
+		if(fInicial.isBefore(LocalDateTime.now()) && fFinal.isAfter(LocalDateTime.now())) {
 			errors.state(request, false, "initialMoment", "manager.task.create.error.label.initialMomentUpdate");
-			}
 		}
 		
 		
