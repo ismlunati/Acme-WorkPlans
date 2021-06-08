@@ -1,0 +1,7 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:48:05.147,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1707,"[1] recordIndex=0, moment=2021/06/02 00:00, author=Foo Bar, text=Just turning 50!, info=http://happybirthday.com",OK
+2021-06-08 21:48:07.059,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1670,"[2] recordIndex=1, moment=2021/06/01 17:40, author=Luis Caro, text=What's up!, info=http://www.example.org",OK
+2021-06-08 21:48:08.933,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1648,"[3] recordIndex=2, moment=2021/05/30 10:40, author=Pablo León, text=Hi!!, info=http://www.example.org",OK
+2021-06-08 21:48:10.81,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1668,"[4] recordIndex=3, moment=2021/05/28 19:39, author=John Doe, text=I'm happy!, info=null",OK
+2021-06-08 21:48:12.649,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1631,"[5] recordIndex=4, moment=2021/05/27 12:30, author=Leslie Design-Testing, text=Woa! This app's so cool!, info=http://www.sample-app.com",OK
+2021-06-08 21:48:14.558,acme.testing.anonymous.shout.AnonymousShoutListTest,list,1694,"[6] recordIndex=5, moment=2021/05/25 15:55, author=Jane Doe, text=I'm the master of my room!, info=http://www.example.org",OK

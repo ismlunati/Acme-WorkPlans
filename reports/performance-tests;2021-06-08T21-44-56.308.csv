@@ -1,0 +1,14 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:45:21.237,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3253,"[1] recordIndex=0, moment=2021/05/24 16:17, author=Juan Lopez, text=Hi all!, info=null",OK
+2021-06-08 21:45:24.738,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3257,"[2] recordIndex=0, moment=2021/05/24 16:17, author=Pedro Dominguez, text=Good morning people, info=http://www.sample-app.com",OK
+2021-06-08 21:45:28.144,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3193,"[3] recordIndex=0, moment=2021/05/24 16:17, author=Lucia Trigueros, text=Hello hello, info=http://www.example.org",OK
+2021-06-08 21:45:31.568,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3213,"[4] recordIndex=0, moment=2021/05/24 16:17, author=Pablo Juarez, text=I'm so excited!, info=http://www.example.org",OK
+2021-06-08 21:45:34.991,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3198,"[5] recordIndex=0, moment=2021/05/24 16:17, author=Luis Gonzalez, text=Just turning 19!, info=http://www.example.com",OK
+2021-06-08 21:45:38.501,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createPositive,3259,"[6] recordIndex=0, moment=2021/05/24 16:17, author=Jaime Vazquez, text=How are u doing?, info=http://www.example.org",OK
+2021-06-08 21:45:40.525,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,1780,"[1] recordIndex=0, moment=2021/05/19 16:14, author=Juan, text=Hi all!, info=null",OK
+2021-06-08 21:45:42.526,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,1779,"[2] recordIndex=0, moment=2021/05/19 16:14, author=Pedro Dominguez, text=null, info=http://www.sample-app.com",OK
+2021-06-08 21:45:44.545,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,1800,"[3] recordIndex=0, moment=2021/05/19 16:14, author=null, text=Hello hello, info=http://www.example.org",OK
+2021-06-08 21:45:46.564,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,1788,"[4] recordIndex=0, moment=2021/05/19 16:14, author=Hernesto Valverde de la Torre, text=I'm so excited!, info=http://www.example.org",OK
+2021-06-08 21:46:18.664,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,31845,"[5] recordIndex=0, moment=aaaa, author=Pedro jose, text=Just turning 19!, info=http://www.example.com",Cannot find 'By.className: text-danger'
+2021-06-08 21:46:50.721,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,31783,"[6] recordIndex=0, moment=16:14 2021/05/19, author=Pedro jose, text=Just turning 19!, info=http://www.example.com",Cannot find 'By.className: text-danger'
+2021-06-08 21:47:22.762,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,31818,"[7] recordIndex=0, moment=05/19/2021 16:14, author=Pedro jose, text=Just turning 19!, info=http://www.example.com",Cannot find 'By.className: text-danger'

@@ -1,0 +1,12 @@
+timestamp,simple-path,time
+2021-06-08 21:55:40.302,/master/welcome,238
+2021-06-08 21:55:40.553,/master/welcome,191
+2021-06-08 21:55:41.296,/master/sign-in,588
+2021-06-08 21:55:42.562,/master/welcome,579
+2021-06-08 21:55:56.129,/master/welcome,203
+2021-06-08 21:55:56.839,/master/welcome,596
+2021-06-08 21:55:57.174,/master/welcome,173
+2021-06-08 21:55:57.4,/master/welcome,175
+2021-06-08 21:55:58.098,/master/sign-in,577
+2021-06-08 21:55:59.408,/master/welcome,588
+2021-06-08 21:56:00.259,/manager/task/list-mine,590

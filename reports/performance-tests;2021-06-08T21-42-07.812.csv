@@ -1,0 +1,23 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:42:34.865,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6164,"[1] recordIndex=0, spamWord=sex, newSpamWord=hola",OK
+2021-06-08 21:42:41.204,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6130,"[2] recordIndex=1, spamWord=sexo, newSpamWord=adios",OK
+2021-06-08 21:42:47.458,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6031,"[3] recordIndex=2, spamWord=hard core, newSpamWord=camiseta",OK
+2021-06-08 21:42:53.809,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6123,"[4] recordIndex=3, spamWord=explícito, newSpamWord=pantalon",OK
+2021-06-08 21:43:00.022,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,5985,"[5] recordIndex=4, spamWord=viagra, newSpamWord=zapatos",OK
+2021-06-08 21:43:06.31,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6069,"[6] recordIndex=5, spamWord=cialis, newSpamWord=ordenador",OK
+2021-06-08 21:43:12.616,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6087,"[7] recordIndex=6, spamWord=nigeria, newSpamWord=raton",OK
+2021-06-08 21:43:18.916,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6079,"[8] recordIndex=7, spamWord=you've won, newSpamWord=teclado",OK
+2021-06-08 21:43:25.245,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6111,"[9] recordIndex=8, spamWord=has ganado, newSpamWord=movil",OK
+2021-06-08 21:43:31.601,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6114,"[10] recordIndex=9, spamWord=million dollar, newSpamWord=pantalla",OK
+2021-06-08 21:43:37.947,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,list,6114,"[11] recordIndex=10, spamWord=millón de dolares, newSpamWord=shaco",OK
+2021-06-08 21:43:44.053,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5855,"[1] recordIndex=0, spamWord=hola, newSpamWord=null",OK
+2021-06-08 21:43:50.15,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5860,"[2] recordIndex=1, spamWord=adios, newSpamWord=null",OK
+2021-06-08 21:43:56.287,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5887,"[3] recordIndex=2, spamWord=camiseta, newSpamWord=null",OK
+2021-06-08 21:44:02.38,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5858,"[4] recordIndex=3, spamWord=pantalon, newSpamWord=null",OK
+2021-06-08 21:44:08.485,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5869,"[5] recordIndex=4, spamWord=zapatos, newSpamWord=null",OK
+2021-06-08 21:44:14.605,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5904,"[6] recordIndex=5, spamWord=ordenador, newSpamWord=null",OK
+2021-06-08 21:44:20.634,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5811,"[7] recordIndex=6, spamWord=raton, newSpamWord=null",OK
+2021-06-08 21:44:26.722,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5867,"[8] recordIndex=7, spamWord=teclado, newSpamWord=null",OK
+2021-06-08 21:44:32.815,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5872,"[9] recordIndex=8, spamWord=movil, newSpamWord=null",OK
+2021-06-08 21:44:38.853,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5808,"[10] recordIndex=9, spamWord=pantalla, newSpamWord=null",OK
+2021-06-08 21:44:44.932,acme.testing.administrator.spamword.AdministratorSpamWordUpdateTest,updateNegative,5831,"[11] recordIndex=10, spamWord=shaco, newSpamWord=null",OK

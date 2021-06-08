@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:38:27.131,acme.testing.administrator.customization.AdministratorCustomizationListTest,list,5143,"[1] recordIndex=0, threshold=10.00",OK

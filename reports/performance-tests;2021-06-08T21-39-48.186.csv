@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:40:13.391,acme.testing.administrator.dashboard.AdministratorDashboardListTest,list,4751,"[1] totalNumberPublicTask=12.00, totalNumberPrivateTask=3.00, totalNumberFinishedTask=7.00, totalNumberNonFinishedTask=8.00, averageTaskWorkload=14.10, minTaskWorkload=20.40, maxTaskWorkload=11.90, deviationTaskWorkload=1.98, averageTaskExecutionPeriods=2.27, minTaskExecutionPeriods=6.00, maxTaskExecutionPeriods=2.00, deviationTaskExecutionPeriods=1.00",OK

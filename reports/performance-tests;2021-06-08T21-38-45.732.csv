@@ -1,0 +1,6 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:39:12.901,acme.testing.administrator.customization.AdministratorCustomizationUpdateTest,updateNegative,6100,"[1] recordIndex=0, threshold=10.00, newThreshold=aaa",OK
+2021-06-08 21:39:19.086,acme.testing.administrator.customization.AdministratorCustomizationUpdateTest,updateNegative,5950,"[2] recordIndex=0, threshold=10.00, newThreshold=null",OK
+2021-06-08 21:39:25.147,acme.testing.administrator.customization.AdministratorCustomizationUpdateTest,updateNegative,5843,"[3] recordIndex=0, threshold=10.00, newThreshold=110.00",OK
+2021-06-08 21:39:31.317,acme.testing.administrator.customization.AdministratorCustomizationUpdateTest,updateNegative,5938,"[4] recordIndex=0, threshold=10.00, newThreshold=-20.00",OK
+2021-06-08 21:39:37.551,acme.testing.administrator.customization.AdministratorCustomizationUpdateTest,updatePositive,5997,"[1] recordIndex=0, threshold=10.00, newThreshold=20.00",OK

@@ -19,8 +19,7 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 	@CsvFileSource(resources = "/manager/task/deletePositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void deletePositivo(final int recordIndex, final String title, final String initialMoment, final String finalMoment, final String workload,
-		final String description, final String newTitle, final String newInitialMoment, final String newFinalMoment, final String newWorkload,
-		final String newDescription) {
+		final String description) {
 		
 		super.signIn("manager2", "manager2");
 		super.clickOnMenu("Manager", "List my tasks");
@@ -33,21 +32,6 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest{
 		super.clickOnListingRecord(recordIndex);
 		
 		super.clickOnSubmitButton("Delete");
-		
-		super.clickOnMenu("Manager", "List my tasks");
-		
-		super.checkColumnHasValue(recordIndex, 0, newTitle);
-		super.checkColumnHasValue(recordIndex, 1, newInitialMoment);
-		super.checkColumnHasValue(recordIndex, 2, newFinalMoment);
-		super.checkColumnHasValue(recordIndex, 3, newWorkload);
-		
-		super.clickOnListingRecord(recordIndex);
-		
-		super.checkInputBoxHasValue("title", newTitle);
-		super.checkInputBoxHasValue("initialMoment", newInitialMoment);
-		super.checkInputBoxHasValue("finalMoment", newFinalMoment);
-		super.checkInputBoxHasValue("workload", newWorkload);
-		super.checkInputBoxHasValue("description", newDescription);
 		
 		super.signOut();
 	}

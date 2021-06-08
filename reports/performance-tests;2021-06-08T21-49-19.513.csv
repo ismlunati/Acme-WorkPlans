@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:49:47.996,acme.testing.authenticated.manager.AuthenticatedManagerCreateTest,create,7960,"[1] username=managertest, password=managertest, name=Manager, surname=Test, email=manager@mail.com, phone=638736485",OK
