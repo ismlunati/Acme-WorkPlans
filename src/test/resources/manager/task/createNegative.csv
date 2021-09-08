@@ -1,14 +1,14 @@
 recordIndex,title,initialMoment,finalMoment,workload,description
-0, Tarea 20: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,,Fallo por no haber workload
-0, Tarea 21: tarea privada finalizada,2021/01/01 11:00,2021/02/01 11:00,2.50,Fallo por crearla en fecha pasada
-0, Tarea 22: tarea privada finalizada,2022/01/02 09:00,2022/01/01 21:00,13.50,Fallo por finalMoment antes que InitialMoment
-0, Tarea 23: tarea privada finalizada,2022/01/01 11:00,2022/01/01 12:00,2.00,Workload mayor que tiempo entre finalMoment e InitialMoment
-0, Tarea 24: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,-12,Fallo por workload negativo
-0, Tarea 25: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,aaaa,Fallo por mal formato del workload
-0, Tarea 26: tarea privada finalizada,2022/06/01 11:02,aaaa,12,Fallo por mal formato del Final moment
-0, Tarea 27: tarea privada finalizada,aaaa,2022/06/03 21:37,12,Fallo por mal formato del Initial moment
-0, ,2022/06/01 11:02,2022/06/03 21:37,12,Fallo por no haber titulo
-0, Tarea 29: tarea privada finalizadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2022/06/01 11:02,2022/06/03 21:37,12,Fallo por titulo demasiado largo
-0, Tarea 30: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,12,
-0, Tarea 31: tarea privada finalizada,,2022/06/03 21:37,12,Fallo por no haber Initial moment
-0, Tarea 32: tarea privada finalizada,2022/06/01 11:02,,12,Fallo por no haber Final moment
+0,Tarea 20: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,101.00,Fallo por no haber workload
+0,Tarea 21: tarea privada finalizada,2021/01/01 11:00,2021/02/01 11:00,2.50,Fallo por crearla en fecha pasada
+0,Tarea 22: tarea privada finalizada,2022/01/02 09:00,2022/01/01 21:00,13.50,Fallo por finalMoment antes que InitialMoment
+0,Tarea 23: tarea privada finalizada,2022/01/01 11:00,2022/01/01 12:00,2.00,Workload mayor que tiempo entre finalMoment e InitialMoment
+0,Tarea 24: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,-12,Fallo por workload negativo
+0,Tarea 25: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,25.6,Fallo por mal formato del workload
+0,Tarea 26: tarea privada finalizada,2022/06/01 11:02,aaaa,12,Fallo por mal formato del Final moment
+0,Tarea 27: tarea privada finalizada,aaaa,2022/06/03 21:37,12,Fallo por mal formato del Initial moment
+0,,2022/06/01 11:02,2022/06/03 21:37,12,Fallo por no haber titulo
+0,Tarea 29: tarea privada finalizadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,2022/06/01 11:02,2022/06/03 21:37,12,Fallo por titulo demasiado largo
+0,Tarea 30: tarea privada finalizada,2022/06/01 11:02,2022/06/03 21:37,12,
+0,Tarea 31: tarea privada finalizada,,2022/06/03 21:37,12,Fallo por no haber Initial moment
+0,Tarea 32: tarea privada finalizada,2022/06/01 11:02,,12,Fallo por no haber Final moment

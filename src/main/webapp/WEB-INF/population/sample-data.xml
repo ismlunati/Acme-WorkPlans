@@ -91,8 +91,8 @@
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
 		<property name="title" value="Tarea 2: tarea privada finalizada"/>
-		<property name="initialMoment" value="2021/02/18 12:02"/>
-		<property name="finalMoment" value="2021/02/24 20:37"/>
+		<property name="initialMoment" value="2022/02/18 12:02"/>
+		<property name="finalMoment" value="2022/02/24 20:37"/>
 		<property name="workload" value="20.4"/>
 		<property name="description" value="Esto es un ejemplo de una tarea privada finalizada"/>
 		<property name="isPublic" value="False"/>
@@ -123,7 +123,7 @@
 		<property name="title" value="Tarea 5: tarea pública no finalizada"/>
 		<property name="initialMoment" value="2023/06/20 11:02"/>
 		<property name="finalMoment" value="2023/06/22 21:37"/>
-		<property name="workload" value="12.7"/>
+		<property name="workload" value="12.4"/>
 		<property name="description" value="Esto es un ejemplo de una tarea pública no finalizada"/>
 		<property name="isPublic" value="True"/>
 		<property name="manager" ref="manager3Manager"/>
@@ -153,7 +153,7 @@
 		<property name="title" value="Tarea 8: tarea pública no finalizada"/>
 		<property name="initialMoment" value="2023/05/20 11:02"/>
 		<property name="finalMoment" value="2023/05/22 21:37"/>
-		<property name="workload" value="13.7"/>
+		<property name="workload" value="13.4"/>
 		<property name="description" value="Esto es un ejemplo de una tarea pública no finalizada"/>
 		<property name="isPublic" value="True"/>
 		<property name="manager" ref="manager2Manager"/>
@@ -193,7 +193,7 @@
 		<property name="title" value="Tarea 12: tarea pública finalizada"/>
 		<property name="initialMoment" value="2020/02/20 11:02"/>
 		<property name="finalMoment" value="2020/02/22 21:37"/>
-		<property name="workload" value="11.9"/>
+		<property name="workload" value="11.5"/>
 		<property name="description" value="Esto es un ejemplo de una tarea pública finalizada"/>
 		<property name="isPublic" value="True"/>
 		<property name="manager" ref="manager3Manager"/>
@@ -203,7 +203,7 @@
 		<property name="title" value="Tarea 13: tarea pública finalizada"/>
 		<property name="initialMoment" value="2020/05/20 11:02"/>
 		<property name="finalMoment" value="2020/05/22 21:37"/>
-		<property name="workload" value="14.8"/>
+		<property name="workload" value="14.2"/>
 		<property name="description" value="Esto es un ejemplo de una tarea pública finalizada"/>
 		<property name="isPublic" value="True"/>
 		<property name="manager" ref="manager2Manager"/>

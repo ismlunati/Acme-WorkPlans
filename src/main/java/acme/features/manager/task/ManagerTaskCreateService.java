@@ -123,15 +123,13 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			
 			if (!errors.hasErrors("workload")) {
 				
-				
+				 
 
 				final String a= entity.getWorkload().toString();
 				final int indexOfDecimal= a.indexOf(".");
 				
 				final Boolean dos= a.substring(indexOfDecimal+1).length()<=2;
-				
-				final String var= a.substring(indexOfDecimal+1);
-				
+								
 				final Boolean enRangoDecimales= Double.parseDouble(a.substring(indexOfDecimal)) <.60 && Double.parseDouble(a.substring(indexOfDecimal))>= .0;
 				
 				final Boolean enRango=entity.getWorkload()>0 && entity.getWorkload()<100;
