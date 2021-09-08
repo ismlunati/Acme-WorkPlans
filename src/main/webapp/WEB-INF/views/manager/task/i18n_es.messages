@@ -32,6 +32,7 @@ manager.task.create.error.label.description = Umbral de palabras spam superado
 manager.task.create.error.label.finalMoment = El momento final no puede ser antes del momento inicial
 manager.task.create.error.label.workload = La carga de trabajo no puede ser mayor del tiempo que hay entre el inicio y final de la tarea
 manager.task.create.error.label.negativeWorkload = La carga de trabajo no puede ser negativa
+manager.task.create.error.label.incorrectWorkload= Workload incorrecto
 
 manager.task.create.error.label.initialMoment=La fecha inicial esta en pasado
 manager.task.create.error.label.finalMoment= La fecha final esta en pasado

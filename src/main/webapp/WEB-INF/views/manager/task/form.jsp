@@ -19,7 +19,7 @@
 	<acme:form-textbox code="manager.task.form.label.title" path="title"/>
 	<acme:form-moment code="manager.task.form.label.initialMoment" path="initialMoment"/>
 	<acme:form-moment code="manager.task.form.label.finalMoment" path="finalMoment"/>
-	<acme:form-double code="manager.task.form.label.workload" path="workload"/>
+	<acme:form-double placeholder="23.15" code="manager.task.form.label.workload" path="workload"/>
 	<acme:form-textarea code="manager.task.form.label.description" path="description"/>
 	<acme:form-checkbox code="manager.task.form.label.isPublic" path="isPublic"/>
 			

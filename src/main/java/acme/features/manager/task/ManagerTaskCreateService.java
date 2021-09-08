@@ -123,6 +123,19 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			
 			if (!errors.hasErrors("workload")) {
 				
+				 
+
+				final String a= entity.getWorkload().toString();
+				final int indexOfDecimal= a.indexOf(".");
+				
+				final Boolean dos= a.substring(indexOfDecimal+1).length()<=2;
+								
+				final Boolean enRangoDecimales= Double.parseDouble(a.substring(indexOfDecimal)) <.60 && Double.parseDouble(a.substring(indexOfDecimal))>= .0;
+				
+				final Boolean enRango=entity.getWorkload()>0 && entity.getWorkload()<100;
+				
+				
+				errors.state(request, enRango&&enRangoDecimales&&dos, "workload", "manager.task.create.error.label.incorrectWorkload");
 				errors.state(request, entity.getWorkload() > 0, "workload", "manager.task.create.error.label.negativeWorkload");
 			}
 			
